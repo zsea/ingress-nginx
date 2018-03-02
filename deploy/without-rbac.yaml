@@ -16,6 +16,7 @@ spec:
         prometheus.io/port: '10254'
         prometheus.io/scrape: 'true' 
     spec:
+      hostNetwork: true
       containers:
         - name: nginx-ingress-controller
           image: registry.cn-hangzhou.aliyuncs.com/zsea/nginx-ingress-controller:0.11.0
