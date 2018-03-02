@@ -23,26 +23,26 @@ The following resources are required for a generic deployment.
 ### Mandatory commands
 
 ```console
-curl https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/namespace.yaml \
+curl https://raw.githubusercontent.com/zsea/ingress-nginx/master/deploy/namespace.yaml \
     | kubectl apply -f -
 
-curl https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/default-backend.yaml \
+curl https://raw.githubusercontent.com/zsea/ingress-nginx/master/deploy/default-backend.yaml \
     | kubectl apply -f -
 
-curl https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/configmap.yaml \
+curl https://raw.githubusercontent.com/zsea/ingress-nginx/master/deploy/configmap.yaml \
     | kubectl apply -f -
 
-curl https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/tcp-services-configmap.yaml \
+curl https://raw.githubusercontent.com/zsea/ingress-nginx/master/deploy/tcp-services-configmap.yaml \
     | kubectl apply -f -
 
-curl https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/udp-services-configmap.yaml \
+curl https://raw.githubusercontent.com/zsea/ingress-nginx/master/deploy/udp-services-configmap.yaml \
     | kubectl apply -f -
 ```
 
 ### Install without RBAC roles
 
 ```console
-curl https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/without-rbac.yaml \
+curl https://raw.githubusercontent.com/zsea/ingress-nginx/master/deploy/without-rbac.yaml \
     | kubectl apply -f -
 ```
 
@@ -51,10 +51,10 @@ curl https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/wi
 Please check the [RBAC](rbac.md) document.
 
 ```console
-curl https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/rbac.yaml \
+curl https://raw.githubusercontent.com/zsea/ingress-nginx/master/deploy/rbac.yaml \
     | kubectl apply -f -
 
-curl https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/with-rbac.yaml \
+curl https://raw.githubusercontent.com/zsea/ingress-nginx/master/deploy/with-rbac.yaml \
     | kubectl apply -f -
 ```
 
